@@ -10,9 +10,13 @@ namespace jun1
     {
         static void Main(string[] args)
         {
-            while (Console.ReadLine() != "exit")
+            string readLine = Console.ReadLine();
+            string exit = "exit";
+            
+            while (readLine != exit)
             {
-                Console.WriteLine("Hello World!"); 
+                Console.WriteLine("Hello World!");
+                readLine = Console.ReadLine();
             }
         }
     }
